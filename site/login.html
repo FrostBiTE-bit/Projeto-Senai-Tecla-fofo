@@ -8,9 +8,32 @@
     <link rel="stylesheet" href="Design Login.css">
 </head>
 <body>
-    <span id="login">
-        login
-        <input type="text" id="cpf" placeholder="CPF:"/>
-    </span>
+    <div class="divgrandona">
+        <div id="login">
+            <div>
+                <div id="textlogin">login</div> 
+                <div>
+                    <div><input type="text" id="cpf" placeholder="CPF:"></div>
+                    <div><input type="text" id="senha" placeholder="Senha:"></div>
+                    <form action="/action_page.php">
+                    <select id="categ" name="categ">
+                        <option value="Médico">Médico</option>
+                        <option value="Paciente">Paciente</option>
+                        <option value="Secretária">Secretária</option>
+                    </select>
+                    <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="colaborador">
+            colaborador
+            <div>
+                <input type="text" id="colabcpf" placeholder="CPF:">
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
