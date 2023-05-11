@@ -23,9 +23,24 @@ body{
     margin-left: 250px;
 }
 #cpf{
+    font-size: 25px;
+    margin-left: 30px;
     margin-top: 30px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 480px;
+}
+#senha{
+    font-size: 25px;
+    margin-left: 30px;
+    height:50px ;
+    width:480px ;
+}
+#categ{
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    height:50px ;
+    width:480px ;
 }
 #colaborador{
     border-color: black;
