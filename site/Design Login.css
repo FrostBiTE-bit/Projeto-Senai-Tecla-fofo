@@ -1,0 +1,16 @@
+@import url(login.html);
+body{
+    background-color: #f5f5f5;
+}
+#login{
+    margin-top: ;
+    position: relative;
+    font-size: xx-large;
+    background-color: blueviolet;
+}
+#cpf{
+    position: absolute;
+    margin-top: 552px;
+
+}
+   
