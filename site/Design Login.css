@@ -40,22 +40,32 @@ body{
     margin-left: 30px;
     height:50px ;
     width:480px ;
+    box-shadow: 5px 5px 5px gray;
+    border-style: none;
 }
 #categ{
     font-size: 25px;
     margin-left: 30px;
     margin-top: 10px;
     height:60px ;
-    width:488px ;
+    width:484px ;
+    box-shadow: 5px 5px 5px gray;
+    border-style: none;
 }
 button{
-    height: ;
-    width: ;
-    margin-top: 30px;
-    margin-left: 250px;
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 230px;
     color: #f5f5f5;
     background-color: #001233;
 }
+#link{
+    margin-top: 20px;
+    margin-left: 180px;
+    
+}
+
 #colaborador{
     margin-top: -10px;
     margin-left: 168px;

@@ -119,7 +119,12 @@ button.login:hover{
 }
 #img3{
   margin-bottom: 196px;
-  margin-left:40px;
+  margin-left:50px;
+}
+#img4{
+  margin-bottom: 30px;
+  margin-top: -190px;
+  margin-left: 910px;
 }
 
 #instagram{
@@ -127,17 +132,6 @@ button.login:hover{
   margin-bottom: 5px;
   margin-left: 1150px;
 
-}
-#facebook{
-  position: absolute;
-  margin-bottom: 5px;
-  margin-left: 1220px;
-}
-
-#twitter{
-  position: absolute;
-  margin-bottom: 5px;
-  margin-left: 1280px;
 }
 #whatsapp{
   position: absolute;
@@ -197,12 +191,6 @@ button.login:hover{
     }
     .instagram{
     background: #c32aa3;
-    }
-    .facebook{
-    background: #1877f2;
-    }
-    .twitter{
-    background: #1da1f2;
     }
     .whatsapp{
     background: #25d366;
