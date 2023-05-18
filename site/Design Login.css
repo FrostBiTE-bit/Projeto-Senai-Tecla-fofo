@@ -83,3 +83,84 @@ button{
 #senha{
     margin-top: 10px;
 }
+
+#nome{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#sexo{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#cpf2{border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#tel{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#data{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#endereço{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#email{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#senha2{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}
+#confsenha{
+    border-style: none;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 50px;
+    width: 480px;
+    box-shadow: 5px 5px 5px gray;
+}

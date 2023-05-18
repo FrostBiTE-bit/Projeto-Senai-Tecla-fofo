@@ -13,12 +13,13 @@ body {
 }
 
 .topnav a {
+  width: 200px;
   margin-left: 122px;
   position: relative;
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 18px 8px;
+  padding: 8px 8px;
   text-decoration: none;
   font-size: 18px;
 }
@@ -82,7 +83,7 @@ body {
   border-radius:10px;
   width:300px;
   height:32px;
-  box-shadow:3px 5px 4px black;
+  box-shadow:4px 6px 5px black;
 }
 #txtBusca{
   float:left;
@@ -171,11 +172,27 @@ body {
 
 }
 #img4{
+  border-radius: 8px;
+  position: relative;
   margin-bottom: 30px;
   margin-top: -187px;
-  margin-left: 1023px;
-  height:200px ;
-  width: 100px;
+  margin-left: 1058px;
+}
+.txtimg4{
+  position: absolute;
+  margin-left: -377px;
+  margin-top: -158px;
+  text-align: center;
+  background-color: transparent;
+  color: #f5f5f5;
+  font-size: x-large;
+  padding: 20px;
+  width: 310px;
+  height: 85px;
+  position: absolute;
+  border-color: #f5f5f5;
+  border-style: solid;
+
 }
 
 #instagram{
