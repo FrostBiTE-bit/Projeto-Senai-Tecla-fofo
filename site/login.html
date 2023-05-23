@@ -25,14 +25,33 @@
                             <option value="Secretária">Secretária</option>
                         </select>
                     </span> <br>
-                    <a id="linkcad" href="artigos/obesidade.html">Não tem uma conta? Faça cadastro aqui!</a>
+                    <a id="linkcad" onclick="moverParaEsquerda()"> Não tem uma conta? Faça cadastro aqui!</a>
                 <div>
                 <button id="botaoe">Entrar</button>
                 </div>
             </span>
     </span>
     <span id="divgrandona2">
-
-
+        <script>
+            var divgrandona2 = document.getElementById("divgrandona2");
+            var posicao = 0;
+        
+            function moverParaEsquerda() {
+              posicao -= 900;
+              divgrandona2.style.left = posicao + "px";
+            }
+        
+            function moverParaDireita() {
+              posicao += 900;
+              divgrandona2.style.left = posicao + "px";
+            }
+          </script>
+    </span>
+    <br>
+    <button id="direita" onclick="moverParaDireita()">Mover para Direita</button>
+    <span>
+        <h1 id="txtcada">Cadastro</h1>
+        
     </span>
     
+</body>

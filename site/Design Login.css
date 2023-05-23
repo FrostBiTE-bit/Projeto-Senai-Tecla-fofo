@@ -11,8 +11,6 @@ body{
     position: fixed;
     display: flex;
     flex-direction: row;
-    border-color: black;
-    border-style: solid;
 }
 #txtlogin{
     font-size: 65px;
@@ -84,13 +82,24 @@ body{
 #botaoe:hover{
     transform: scale(1.03);
 }
-
 #divgrandona2{
+    position: relative;
+    background-color: #001233;
     margin-top: -50px;
     float: right;
     height: 749px;
-    width: 650px;
+    width: 850px;
     border-color: black;
     border-style: solid;
-    
+    transition: left 0.5s ease;
+
+}
+#txtcada{
+    margin-top: -400px;
+    margin-left: 1000px;
+}
+
+#direita{
+    margin-top: 300px;
+    margin-left: 1000px;
 }
