@@ -10,6 +10,9 @@
 </head>
 <body>
     <span id="divgrandona">
+        <form>
+            <input type="button"  id="voltar" value="Voltar" onclick="history.back()">
+        </form>
         <h1 id="txtlogin">
             Login
         </h1>
@@ -27,11 +30,14 @@
                     </span> <br>
                     <a id="linkcad" onclick="moverParaEsquerda()"> Não tem uma conta? Faça cadastro aqui!</a>
                 <div>
-                <button id="botaoe">Entrar</button>
+                <a href="homepaciente.html"><button id="botaoe">Entrar</button></a>
                 </div>
             </span>
     </span>
     <span id="divgrandona3">
+        <form>
+            <input type="button"  id="voltar2" value="Voltar" onclick="history.back()">
+        </form>
         <h1 id="txtcada">Cadastro</h1>
         <span id="ctgcolab">
             <input type="text" id="nome" name="nome" placeholder="Nome:">
@@ -48,8 +54,9 @@
             <input type="password" id="senha2" name="senha" placeholder="Senha:" ><br>
             <input type="password" id="confsenha" name="confsenha" placeholder="Confirme a sua senha:" ><br>
         </span>
-        <button id="btncadastro" onclick="moverParaDireita()">Cadastrar</button>
+        <button id="btncadastro"onclick="openPopup()">Cadastrar</button><br>
     </span>
+    
     <span id="divgrandona2">
         <img class="imglogo" src="imagens/SP Medical Group.png" alt="logo">
         <script>
@@ -67,6 +74,20 @@
             }
           </script>
     </span>
+    <div id="popup" class="popup">
+        <h2>Obrigado por se cadastrar!</h2>
+        <p>Seu cadastro foi realizado com sucesso.</p>
+        <button onclick="moverParaDireita();closePopup()">Fechar</button>
+      </div>
+      <script>
+        function openPopup() {
+          document.getElementById("popup").style.display = "block";
+        }
+    
+        function closePopup() {
+          document.getElementById("popup").style.display = "none";
+        }
+      </script>
     <br>
     
     
