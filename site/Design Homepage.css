@@ -108,7 +108,7 @@ body {
   margin-top: 10px;
 }
 #img1{
-  
+  cursor: pointer;
   border-radius: 8px;
   position: relative;
   transition: transform .2s;
@@ -122,6 +122,7 @@ body {
   transform: scale(1.01);
 }
 .txtimg1{
+  cursor: pointer;
   text-decoration: none;
   text-align: center;
   background-color: transparent;
