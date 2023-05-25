@@ -16,14 +16,14 @@ body{
     font-size: 65px;
     position: absolute;
     margin-top: 100px;
-    margin-left: 215px;
+    margin-left: 240px;
 
 }
 #cpf{
     font-size: 20px;
     position:relative;
     margin-top: 230px;
-    margin-left: 30px;
+    margin-left: 80px;
     height:44px ;
     width:500px ;
     border-color: white;
@@ -34,7 +34,7 @@ body{
     font-size: 20px;
     position:relative;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 80px;
     height:44px ;
     width:500px ;
     border-color: white;
@@ -43,7 +43,7 @@ body{
 }
 #linksenha{
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 80px;
     color: gray;
 }
 #linksenha:hover{
@@ -53,7 +53,7 @@ body{
     font-size: 20px;
     position:relative;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 80px;
     height:47px ;
     width:508px ;
     border-color: white;
@@ -62,7 +62,7 @@ body{
 }
 #linkcad{
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 80px;
     color: gray;
 
 }
@@ -72,7 +72,7 @@ body{
 #botaoe{
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 220px;
+    margin-left: 260px;
     width: 125px;
     transition: transform .2s;
     height: 45px;
@@ -88,18 +88,124 @@ body{
     margin-top: -50px;
     float: right;
     height: 749px;
-    width: 850px;
+    width: 800px;
     border-color: black;
     border-style: solid;
     transition: left 0.5s ease;
 
 }
-#txtcada{
-    margin-top: -400px;
-    margin-left: 1000px;
+#divgrandona3{
+    margin-top: -70px;
+    height: 100%;
+    width: 800px;
+    margin-left: 750px;
+    position: fixed;
 }
+#txtcada{
+    font-size: 65px;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 200px;
+    
+}
+#nome{
+    font-size: 20px;
+    position:relative;
+    margin-top: 230px;
+    margin-left: 60px;
+    height:40px ;
+    width:305px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
 
-#direita{
-    margin-top: 300px;
-    margin-left: 1000px;
+}
+#categorias{
+    font-size: 20px;
+    position:relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    height:40px ;
+    width:180px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+
+
+}
+#cpf2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    height:40px ;
+    width:500px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+}
+#tel{
+    font-size: 20px;
+    position:relative;
+    margin-top: 20px;
+    margin-left: 60px;
+    height:40px ;
+    width:235px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+
+}
+#data{
+    font-size: 20px;
+    position:relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    height:40px ;
+    width:235px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+
+}
+#endereço{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    height:40px ;
+    width:500px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+
+}
+#senha2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    height:40px ;
+    width:500px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+
+}
+#confsenha{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    height:40px ;
+    width:500px ;
+    border-color: white;
+    box-shadow: 2px 2px  gray;
+
+}
+#btncadastro{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 240px;
+    width: 125px;
+    transition: transform .2s;
+    height: 45px;
+    background-color: #001233;
+    color: #f5f5f5;
+}
+#btncadastro:hover{
+    transform: scale(1.03);
+}
+.imglogo{
+    margin-top: 100px;
+    margin-left: 200px;
 }
