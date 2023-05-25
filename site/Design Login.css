@@ -7,10 +7,11 @@ body{
 #divgrandona{
     margin-top: -50px;
     height: 100%;
-    width: 600px;
+    width: 50%;
     position: fixed;
     display: flex;
     flex-direction: row;
+    margin-right: 50%;
 }
 #txtlogin{
     font-size: 65px;
@@ -88,7 +89,7 @@ body{
     margin-top: -50px;
     float: right;
     height: 749px;
-    width: 800px;
+    width: 50%;
     border-color: black;
     border-style: solid;
     transition: left 0.5s ease;
@@ -97,22 +98,22 @@ body{
 #divgrandona3{
     margin-top: -70px;
     height: 100%;
-    width: 800px;
-    margin-left: 750px;
+    width: 50%;
+    margin-left: 50%;
     position: fixed;
 }
 #txtcada{
     font-size: 65px;
     position: absolute;
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 255px;
     
 }
 #nome{
     font-size: 20px;
     position:relative;
     margin-top: 230px;
-    margin-left: 60px;
+    margin-left: 130px;
     height:40px ;
     width:305px ;
     border-color: white;
@@ -134,7 +135,7 @@ body{
 #cpf2{
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 130px;
     height:40px ;
     width:500px ;
     border-color: white;
@@ -144,7 +145,7 @@ body{
     font-size: 20px;
     position:relative;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 130px;
     height:40px ;
     width:235px ;
     border-color: white;
@@ -165,7 +166,7 @@ body{
 #endereço{
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 130px;
     height:40px ;
     width:500px ;
     border-color: white;
@@ -175,7 +176,7 @@ body{
 #senha2{
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 130px;
     height:40px ;
     width:500px ;
     border-color: white;
@@ -185,7 +186,7 @@ body{
 #confsenha{
     font-size: 20px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 130px;
     height:40px ;
     width:500px ;
     border-color: white;
@@ -195,7 +196,7 @@ body{
 #btncadastro{
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 240px;
+    margin-left: 310px;
     width: 125px;
     transition: transform .2s;
     height: 45px;
@@ -207,5 +208,8 @@ body{
 }
 .imglogo{
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 95px;
+
 }
+
+    

@@ -46,7 +46,7 @@
             <input type="date" id="data" name="data" ><br>
             <input type="text" id="endereço" name="endereço" placeholder="Endereço:" ><br>
             <input type="password" id="senha2" name="senha" placeholder="Senha:" ><br>
-            <input type="text" id="confsenha" name="confsenha" placeholder="Confirme a sua senha:" ><br>
+            <input type="password" id="confsenha" name="confsenha" placeholder="Confirme a sua senha:" ><br>
         </span>
         <button id="btncadastro" onclick="moverParaDireita()">Cadastrar</button>
     </span>
@@ -54,15 +54,15 @@
         <img class="imglogo" src="imagens/SP Medical Group.png" alt="logo">
         <script>
             var divgrandona2 = document.getElementById("divgrandona2");
-            var posicao = 900;
+            var posicao = 0;
         
             function moverParaEsquerda() {
-              posicao -= 900;
+              posicao -= 767;
               divgrandona2.style.left = posicao + "px";
             }
         
             function moverParaDireita() {
-              posicao += 900;
+              posicao += 767;
               divgrandona2.style.left = posicao + "px";
             }
           </script>
