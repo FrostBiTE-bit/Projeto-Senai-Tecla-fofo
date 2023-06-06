@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <style>
@@ -39,18 +40,23 @@
 </head>
 <body>
   
-  <button onclick="openPopup()">Abrir Pop-up</button>
+ <input type="text" id="inputText" placeholder="Digite algo">
+  <button onclick="openPopup()">Mostrar Pop-up</button> 
   
   <div id="popupContainer" class="popup-container">
     <div class="popup">
-      <h1>Meu Pop-up</h1>
-      <p>Este é um pop-up com uma animação de entrada e saída.</p>
+      <h1>Dados Inseridos</h1>
+      <p id="popupText"></p>
       <button onclick="closePopup()">Fechar</button>
     </div>
   </div>
   
   <script>
     function openPopup() {
+      var inputText = document.getElementById("inputText").value;
+      var popupText = document.getElementById("popupText");
+      popupText.innerText = inputText;
+      
       var popupContainer = document.getElementById("popupContainer");
       popupContainer.style.display = "block";
     }

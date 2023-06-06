@@ -11,6 +11,7 @@ body{
     color: #f5f5f5;
     font-size: 20px;
     transition: transform .2s;
+    box-shadow: 2px 2px 2px lightgray;
 }
 #voltar:hover{
     transform: scale(1.03);
@@ -37,23 +38,23 @@ body{
     padding-top: 25px;
     text-align: center;
 }
-#data{
-    border:1px;
+#nameInput{
+    font-size: 20px;
     font-family: 'Lexand Deca',sans-serif;
     border-style: solid;
-    width: 410px;
-    height: 50px;
-    margin-left: 15px;
-    margin-top: 15px;
+    width: 510px;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: 20px
 }
-#medico{
+#medicalselect{
+    font-size: 20px;
     font-family: 'Lexand Deca',sans-serif;
-    border:1px;
     border-style: solid;
-    width: 410px;
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 15px;
+    width: 515px;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: 20px
 }
 #txtmedico{
     
@@ -61,34 +62,31 @@ body{
     text-align: left;
     font-size: 25px;
 }
-#hora{
-    border:1px;
+#phoneInput{
+    font-size: 20px;
     font-family: 'Lexand Deca',sans-serif;
     border-style: solid;
-    width: 410px;
-    height: 50px;
-    margin-left: 15px;
-    margin-top: 15px;
+    width: 507px;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: 20px
+
+}
+#emailInput{
+    font-family: 'Lexand Deca',sans-serif;
+    font-size: 20px;
+    border-style: solid;
+    width: 510px;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: 20px
 }
 #txthora{
     margin: 10px;
     text-align: left;
     font-size: 25px;
 }
-#dia{
-    border:1px; 
-    font-family: 'Lexand Deca',sans-serif;
-    border-style: solid;
-    width: 410px;
-    height: 50px;
-    margin-left: 15px;
-    margin-top: 15px
-}
-#txtdia{
-    margin: 10px;
-    text-align: left;
-    font-size: 25px;
-}
+
 #cancel{
     font-size: 25px;
     color: white;
@@ -120,8 +118,10 @@ body{
     transition: 1s;
 }
 #txtagenda{
+    font-weight: 20;
     padding-top: 10px;
-    font-size: 25px;
+    padding-left: 150px;
+    font-size: 50px;
 }
 #agenda:hover{
     cursor: pointer;
@@ -129,10 +129,11 @@ body{
     transform:scale(1.03);
 
 }
+#caixas{
+    margin-left: 120px;
+}
 #img{
-    border: 5px #f5f5f5;
-    border-style: double;
-    padding: 8px;
+    
     position:absolute;
     margin-top: 30px;
     width: 600px;
@@ -151,14 +152,16 @@ body{
   }
   
   .popup {
+    border: 5px solid #001233;
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 20px;
-    width: 300px;
-    height: 200px;
+    width: 700px;
+    height: auto;
     animation: popup-animation 0.5s;
   }
   
@@ -172,3 +175,27 @@ body{
       opacity: 1;
     }
   }
+#btnagenda{
+    font-size: 20px;
+    margin-left: 180px;
+    height: 60px;
+    width: 300px;
+    transition: transform 0.4s;
+    background-color: #f5f5f5;
+    boe
+    box-shadow: 2px 2px 2px lightgray;
+}
+#btnagenda:hover{
+    background-color: #001233;
+    color: #f5f5f5;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#x{
+    border-radius: 4px ;
+    background-color: transparent;
+    border-style: none;
+}
+#x:hover{
+    background-color: lightgray;
+}

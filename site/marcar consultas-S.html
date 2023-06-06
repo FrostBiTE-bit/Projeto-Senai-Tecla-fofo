@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fodasse 7</title>
+    <link href="marcar consulta-S.css" rel="stylesheet">
+</head>
+<body>
+    <div id="divgrandona">
+    <img src="imagens/SP Medical Group.png" alt="logo" id="img">
+    </div>
+    <div id="marcar">
+        <form>
+            <input type="button"  id="voltar" value="Voltar" onclick="history.back()">
+        </form>
+        <h1 id="txtagenda">Agendar consulta</h1>
+        <div id="caixas">
+            <input type="text" id="nameInput" placeholder="Data:"><br>
+            <input type="text" id="emailInput" placeholder="Hora: "><br>
+            <input type="text" id="phoneInput" placeholder="Paciente"><br>
+            <select id="medicalselect"><br>
+                <option value="" disabled selected hidden>Médicos</option>
+                <option value="Acir">Dr. Acir Machado</option>
+                <option value="Lilian">Dra. Lilian Ferraz</option>
+                <option value="Roberta">Dra. Roberta Espindola</option>
+            </select>
+        </div>
+        <br>
+        <button id="btnagenda" onclick="openPopup()">Agendar</button>
+    </div>
+    <div id="popupContainer" class="popup-container">
+        <div class="popup">
+        <button id="x" onclick="closePopup()">X</button>
+          <h1>Obrigado! Sua consulta foi marcada com sucesso</h1>
+          <p id="nameText"></p>
+          <p id="emailText"></p>
+          <p id="phoneText"></p>
+          <p id="medico"></p>
+        </div>
+
+   
+    <script>
+    function openPopup() {
+      var nameInput = document.getElementById("nameInput").value;
+      var emailInput = document.getElementById("emailInput").value;
+      var phoneInput = document.getElementById("phoneInput").value;
+      var medicalselect = document.getElementById("medicalselect").value;
+      
+      var nameText = document.getElementById("nameText");
+      var emailText = document.getElementById("emailText");
+      var phoneText = document.getElementById("phoneText");
+      var medicalText = document.getElementById("medico");
+      
+      nameText.innerText = "Data: " + nameInput;
+      emailText.innerText = "Hora: " + emailInput;
+      phoneText.innerText = "Paciente: " + phoneInput;
+      medicalText.innerText = "Médico: " + medicalselect;
+      
+      var popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "block";
+    }
+    
+    function closePopup() {
+      var popupContainer = document.getElementById("popupContainer");
+      popupContainer.style.display = "none";
+    }
+      </script>
+
+    
+</body>
+</html>
