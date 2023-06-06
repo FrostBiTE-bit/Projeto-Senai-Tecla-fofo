@@ -63,25 +63,33 @@
     var nameText = urlParams.get("nameText");
     var emailText = urlParams.get("emailText");
     var phoneText = urlParams.get("phoneText");
+    
     var medicalselect = urlParams.get("medicalselect");
 
     var consultaTable = document.getElementById("consultaTable");
 
-for (var i = 0; i < 5; i++) { 
-    var newRow = consultaTable.insertRow();
+    var nameText = urlParams.get("nameText");
+    var emailText = urlParams.get("emailText");
+    var phoneText = urlParams.get("phoneText");
+    var medicalselect = urlParams.get("medicalselect");
 
-    var checkboxCell = newRow.insertCell(-1);
-    var nameCell = newRow.insertCell(-1);
-    var emailCell = newRow.insertCell(-1);
-    var phoneCell = newRow.insertCell(-1);
-    var medCell = newRow.insertCell(-1);
+    var consultaTable = document.getElementById("consultaTable");
 
-    checkboxCell.innerHTML = '<input type="checkbox" class="itemCheckbox" value="1">';
-    nameCell.textContent = urlParams.get("nameText" + (i + 1)); 
-    emailCell.textContent = urlParams.get("emailText" + (i + 1));
-    phoneCell.textContent = urlParams.get("phoneText" + (i + 1));
-    medCell.textContent = urlParams.get("medicalselect" + (i + 1)); 
-}
+    for (var i = 0; i < 15; i++) { 
+        var newRow = consultaTable.insertRow();
+
+        var checkboxCell = newRow.insertCell(-1);
+        var nameCell = newRow.insertCell(-1);
+        var emailCell = newRow.insertCell(-1);
+        var phoneCell = newRow.insertCell(-1);
+        var medCell = newRow.insertCell(-1);
+
+        checkboxCell.innerHTML = '<input type="checkbox" class="itemCheckbox" value="1">';
+        nameCell.textContent = nameText;
+        emailCell.textContent = emailText;
+        phoneCell.textContent = phoneText;
+        medCell.textContent = medicalselect;
+    }
     </script>
 </body>
 </html>
