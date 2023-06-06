@@ -1,4 +1,3 @@
-@import url(Minhas\ consultas.html);
 body{
     background-color: #f5f5f5;
     font-family: 'Lexand Deca',sans-serif;
@@ -17,14 +16,15 @@ body{
     transform: scale(1.03);
 }
 #divgrandona{
-    margin-top: 20px;
-    margin-left: -10px;
-    width: 1538px;
-    height: 60px;
+    position: absolute;
+    width: 50%;
+    height: 755px;
+    margin-top: -10px;
+    margin-left: 760px;
     background-color: #001233;
 }
 #consulta{
-
+    position: relative;
     margin: 30px;
     background-color: white;
     height: 507px;
@@ -36,6 +36,15 @@ body{
     font-size: 35px;
     padding-top: 25px;
     text-align: center;
+}
+#data{
+    border:1px;
+    font-family: 'Lexand Deca',sans-serif;
+    border-style: solid;
+    width: 410px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 #medico{
     font-family: 'Lexand Deca',sans-serif;
@@ -100,28 +109,66 @@ body{
     width: 400px;
     text-align: center;
 }
-#btnagenda{
-    position: absolute;
-    margin-top: -545px;
+#agenda{
+    text-align: center;
+    margin-top: -537px;
+    width: 657px;
+    height: 100px;
     margin-left: 700px;
-    height: 75px;
-    width: 640px;
-    font-size: 20px;
-    transition: transform 0.5s;
+    border-style: solid;
+    box-shadow:4px 4px 4px lightgray;
+    transition: 1s;
 }
-#btnagenda:hover{
+#txtagenda{
+    padding-top: 10px;
+    font-size: 25px;
+}
+#agenda:hover{
     cursor: pointer;
-    background-color: #001233;
-    color: #f5f5f5;
-    transform:scale(1.02);
+    background-color:#e6f3fe;
+    transform:scale(1.03);
 
 }
 #img{
-    margin-top: -445px;
-    position: absolute;
-    border:2px;
-    border-style: solid;
-    width: 640px;
-    height: 410px;
-    margin-left: 700px;
+    border: 5px #f5f5f5;
+    border-style: double;
+    padding: 8px;
+    position:absolute;
+    margin-top: 30px;
+    width: 600px;
+    height: 650px;
+    margin-left: 90px;
 }
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    animation: popup-animation 0.5s;
+  }
+  
+  @keyframes popup-animation {
+    0% {
+      transform: translate(-50%, -50%) scale(0.7);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }

@@ -227,7 +227,7 @@ body {
 #instagram{
   position: absolute;
   margin-bottom: 5px;
-  margin-left: 1150px;
+  margin-left: 70px;
 
 }
 #whatsapp{
@@ -254,7 +254,7 @@ body {
     color: white;
     box-shadow: 0 0 50px #b315917c;
     }
-    .box:nth-child(4):hover{
+    .box:nth-child(2):hover{
     background: #25d366;
     box-shadow: 0 0 50px #25d3657e;
     }
@@ -292,4 +292,8 @@ body {
 #zapicon{
   height: 30px;
   width: 30px;
+}
+#instaicon{
+    height: 30px;
+    width: 30px;
 }

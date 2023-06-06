@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fodasse 2</title>
+    <title>SP MEDICAL GROUP - LOGIN</title>
     <link rel="stylesheet" href="Design Login.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -21,16 +21,23 @@
                 <input type="password" id="senha" name="senha" placeholder="Senha:"> <br>
                     <a href="artigos/obesidade.html" id="linksenha">Esqueceu a senha?</a>
                     <span>
-                        <select id="categoria" name="profissão">
-                            <option value="" disabled selected hidden>Categoria</option>
-                            <option value="Médico">Médico</option>
-                            <option value="Paciente">Paciente</option>
-                            <option value="Secretária">Secretária</option>
-                        </select>
+                        <form id="escolhas">
+                            <label>
+                              <input type="checkbox" class="redirectCheckbox" onchange="handleCheckboxChange(this)"> Paciente
+                            </label>
+                            <br>
+                            <label>
+                              <input type="checkbox" class="redirectCheckbox"onchange="handleCheckboxChange(this)"> Médico
+                            </label>
+                            <br>
+                            <label>
+                              <input type="checkbox" class="redirectCheckbox" onchange="handleCheckboxChange(this)"> Secretária
+                            </label>
+                        </form>
                     </span> <br>
                     <a id="linkcad" onclick="moverParaEsquerda()"> Não tem uma conta? Faça cadastro aqui!</a>
                 <div>
-                <a href="homepaciente.html"><button id="botaoe">Entrar</button></a>
+                <a><button id="botaoe"onclick="redirect()">Entrar</button></a>
                 </div>
             </span>
     </span>
@@ -72,6 +79,45 @@
               posicao += 767;
               divgrandona2.style.left = posicao + "px";
             }
+            function redirect() {
+      if (document.getElementById("redirectCheckbox").checked) {
+        window.location.href = "https://exemplo.com/pagina-de-destino";
+      }
+    }
+    function redirect() {
+      var checkboxes = document.getElementsByClassName("redirectCheckbox");
+      var redirectURL;
+      
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          switch (i) {
+            case 0:
+              redirectURL = "homepaciente.html";
+              break;
+            case 1:
+              redirectURL = "";
+              break;
+            case 2:
+              redirectURL = "HomepageSecretaria.html";
+              break;
+          }
+          break;
+        }
+      }
+      
+      if (redirectURL) {
+        window.location.href = redirectURL;
+      }
+    }
+    function handleCheckboxChange(checkbox) {
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      
+      checkboxes.forEach(function(currentCheckbox) {
+        if (currentCheckbox !== checkbox) {
+          currentCheckbox.checked = false;
+        }
+      });
+    }
           </script>
     </span>
     <div id="popup" class="popup">

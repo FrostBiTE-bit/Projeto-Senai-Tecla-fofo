@@ -4,66 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fodasse6</title>
+    <title>SP MEDICAL GROUP - CONSULTAS</title>
     <link href="consultas.css" rel="stylesheet" >
 </head>
     <button id="voltar"onclick="history.back()">Voltar</button>
 <body>
     <div id="divgrandona">
-        <h1 id="txtconsul">Consultas do dia</h1>
+        <h1 id="txtconsul">Consultas do dia: <span id="data-atual"></span></h1>
     </div>
 <div class="table-wrapper">
     <table>
         <tr>
+          <th></th>
           <th>Horário</th>
           <th>Médico</th>
           <th>Paciente</th>
-          <th>Cancelar</th>
+          <th><button id="cancel" onclick="openPopup()">Cancelar</button></th>
         </tr>
         <tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
           <td>9:30</td>
           <td>Acir Machado</td>
           <td>Daiane Garcia</td>
-          <td>
-            <input type="checkbox">
-          </td>
+          <td></td>
         </tr>
         <tr>
-          <td>9:30</td>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>10:30</td>
           <td>Lilian Ferraz</td>
-          <td>Gabriel Alves</td>
+          <td>Gabriel</td>
+          <td></td>
         </tr>
         <tr>
-          <td>10:00</td>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>11:30</td>
           <td>Roberta Espindola</td>
-          <td>Carlos Henrique</td>
+          <td>Ana Clara</td>
+          <td></td>
         </tr>
         <tr>
-            <td>11:00</td>
-            <td>Roberta Espindola</td>
-            <td>João Vitor </td>
-          </tr>
-          <tr>
-            <td>13:00</td>
-            <td>Acir Machado</td>
-            <td>Carlos Henrique</td>
-          </tr>
-          <tr>
-            <td>14:30</td>
-            <td>Lilian Ferraz</td>
-            <td>Seu pai é viado</td>
-          </tr>
-          <tr>
-            <td>15:30</td>
-            <td>Roberta Espindola</td>
-            <td>Pau pequeno</td>
-          </tr>
-          <tr>
-            <td>16:00</td>
-            <td>Acir Machado</td>
-            <td>Gay</td>
-          </tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>12:30</td>
+          <td>Roberta Espindola</td>
+          <td>Maria Júlia</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>13:30</td>
+          <td>Lilian Ferraz</td>
+          <td>Raul Correa</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>14:30</td>
+          <td>Acir Machado</td>
+          <td>Carlos Henrique</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>15:30</td>
+          <td>Acir Machado</td>
+          <td>João Vitor</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>16:30</td>
+          <td>Lilian Ferraz</td>
+          <td>Daiane Alcantara</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
+          <td>17:30</td>
+          <td>Roberta Espindola</td>
+          <td>Julia P feia</td>
+          <td></td>
+        </tr>
+       
       </table>
     </div>
+    <div id="popup" class="popup">
+      <h2>TEM CERTEZA QUE DESEJA CANCELAR SUA CONSULTA?</h2>
+      <button onclick="closePopup(),removerItens()" id="removeButton">Confirmar</button>
+
+    </div>
+    <script>
+      function openPopup() {
+        document.getElementById("popup").style.display = "block";
+      }
+  
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+      
+      
+      function removeSelectedRows() {
+      var checkboxes = document.getElementsByClassName('itemCheckbox');
+      var itemTable = document.getElementById('itemTable');
+
+      
+      for (var i = checkboxes.length - 1; i >= 0; i--) {
+        var checkbox = checkboxes[i];
+
+        
+        if (checkbox.checked) {
+          
+          var row = checkbox.parentNode.parentNode;
+          row.parentNode.removeChild(row);
+        }
+      }
+    }
+    var removeButton = document.getElementById('removeButton');
+    removeButton.addEventListener('click', removeSelectedRows);
+    function exibirDataAtual() {
+      var dataAtual = new Date();
+      var dia = dataAtual.getDate();
+      var mes = dataAtual.getMonth() + 1;
+      var ano = dataAtual.getFullYear();
+
+      var dataFormatada = dia + '/' + mes + '/' + ano;
+
+      document.getElementById('data-atual').textContent = dataFormatada;
+    }
+
+    setInterval(exibirDataAtual, 1000); // Atualiza a cada segundo
+    </script>
 </body>
 </html>
