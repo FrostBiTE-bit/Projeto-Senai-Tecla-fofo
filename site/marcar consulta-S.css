@@ -182,8 +182,8 @@ body{
     width: 300px;
     transition: transform 0.4s;
     background-color: #f5f5f5;
-    boe
-    box-shadow: 2px 2px 2px lightgray;
+    border-style: none;
+    box-shadow: 2px 2px 2px 2px lightgray;
 }
 #btnagenda:hover{
     background-color: #001233;

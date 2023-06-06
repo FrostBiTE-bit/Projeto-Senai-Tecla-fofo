@@ -7,131 +7,79 @@
     <title>SP MEDICAL GROUP - CONSULTAS</title>
     <link href="consultas.css" rel="stylesheet" >
 </head>
-    <button id="voltar"onclick="history.back()">Voltar</button>
 <body>
+    <button id="voltar" onclick="history.back()">Voltar</button>
     <div id="divgrandona">
         <h1 id="txtconsul">Consultas do dia: <span id="data-atual"></span></h1>
     </div>
-<div class="table-wrapper">
-    <table>
-        <tr>
-          <th></th>
-          <th>Horário</th>
-          <th>Médico</th>
-          <th>Paciente</th>
-          <th><button id="cancel" onclick="openPopup()">Cancelar</button></th>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>9:30</td>
-          <td>Acir Machado</td>
-          <td>Daiane Garcia</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>10:30</td>
-          <td>Lilian Ferraz</td>
-          <td>Gabriel</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>11:30</td>
-          <td>Roberta Espindola</td>
-          <td>Ana Clara</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>12:30</td>
-          <td>Roberta Espindola</td>
-          <td>Maria Júlia</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>13:30</td>
-          <td>Lilian Ferraz</td>
-          <td>Raul Correa</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>14:30</td>
-          <td>Acir Machado</td>
-          <td>Carlos Henrique</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>15:30</td>
-          <td>Acir Machado</td>
-          <td>João Vitor</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>16:30</td>
-          <td>Lilian Ferraz</td>
-          <td>Daiane Alcantara</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="itemCheckbox" value="1"></td>
-          <td>17:30</td>
-          <td>Roberta Espindola</td>
-          <td>Julia P feia</td>
-          <td></td>
-        </tr>
-       
-      </table>
+    <div class="table-wrapper">
+        <table id="consultaTable">
+            <tr>
+              <th></th>
+              <th>Horário</th>
+              <th>Médico</th>
+              <th>Paciente</th>
+              <th><button id="cancel" onclick="openPopup()">Cancelar</button></th>
+            </tr>
+        </table>
     </div>
     <div id="popup" class="popup">
-      <h2>TEM CERTEZA QUE DESEJA CANCELAR SUA CONSULTA?</h2>
-      <button onclick="closePopup(),removerItens()" id="removeButton">Confirmar</button>
-
+        <h2>TEM CERTEZA QUE DESEJA CANCELAR SUA CONSULTA?</h2>
+        <button onclick="closePopup(); removerItens()" id="removeButton">Confirmar</button>
     </div>
+
     <script>
-      function openPopup() {
+    function openPopup() {
         document.getElementById("popup").style.display = "block";
-      }
-  
-      function closePopup() {
+    }
+
+    function closePopup() {
         document.getElementById("popup").style.display = "none";
-      }
-      
-      
-      function removeSelectedRows() {
-      var checkboxes = document.getElementsByClassName('itemCheckbox');
-      var itemTable = document.getElementById('itemTable');
+    }
 
-      
-      for (var i = checkboxes.length - 1; i >= 0; i--) {
-        var checkbox = checkboxes[i];
+    function removerItens() {
+        var checkboxes = document.getElementsByClassName('itemCheckbox');
+        var consultaTable = document.getElementById('consultaTable');
 
-        
-        if (checkbox.checked) {
-          
-          var row = checkbox.parentNode.parentNode;
-          row.parentNode.removeChild(row);
+        for (var i = checkboxes.length - 1; i >= 0; i--) {
+            var checkbox = checkboxes[i];
+
+            if (checkbox.checked) {
+                var row = checkbox.parentNode.parentNode;
+                consultaTable.deleteRow(row.rowIndex);
+            }
         }
-      }
     }
-    var removeButton = document.getElementById('removeButton');
-    removeButton.addEventListener('click', removeSelectedRows);
+
     function exibirDataAtual() {
-      var dataAtual = new Date();
-      var dia = dataAtual.getDate();
-      var mes = dataAtual.getMonth() + 1;
-      var ano = dataAtual.getFullYear();
-
-      var dataFormatada = dia + '/' + mes + '/' + ano;
-
-      document.getElementById('data-atual').textContent = dataFormatada;
+        var dataAtual = new Date();
+        var dataFormatada = dataAtual.toLocaleDateString('pt-BR');
+        document.getElementById('data-atual').textContent = dataFormatada;
     }
 
-    setInterval(exibirDataAtual, 1000); // Atualiza a cada segundo
+    exibirDataAtual();
+    var urlParams = new URLSearchParams(window.location.search);
+
+    var nameText = urlParams.get("nameText");
+    var emailText = urlParams.get("emailText");
+    var phoneText = urlParams.get("phoneText");
+    var medicalselect = urlParams.get("medicalselect");
+
+    var consultaTable = document.getElementById("consultaTable");
+    var newRow = consultaTable.insertRow();
+
+
+    var checkboxCell = newRow.insertCell();
+    var nameCell = newRow.insertCell();
+    var emailCell = newRow.insertCell();
+    var phoneCell = newRow.insertCell();
+    var medCell = newRow.insertCell();
+
+    checkboxCell.innerHTML = '<input type="checkbox" class="itemCheckbox" value="1">';
+    nameCell.textContent = nameText;
+    emailCell.textContent = emailText;
+    phoneCell.textContent = phoneText;
+    medCell.textContent = medicalselect;
     </script>
 </body>
 </html>

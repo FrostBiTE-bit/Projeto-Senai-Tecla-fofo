@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,15 +31,14 @@
     </div>
     <div id="popupContainer" class="popup-container">
         <div class="popup">
-        <button id="x" onclick="closePopup()">X</button>
+        <button id="x" onclick="closePopup();transferirDados()">X</button>
           <h1>Obrigado! Sua consulta foi marcada com sucesso</h1>
           <p id="nameText"></p>
           <p id="emailText"></p>
           <p id="phoneText"></p>
           <p id="medico"></p>
         </div>
-
-   
+    </div>
     <script>
     function openPopup() {
       var nameInput = document.getElementById("nameInput").value;
@@ -66,8 +64,21 @@
       var popupContainer = document.getElementById("popupContainer");
       popupContainer.style.display = "none";
     }
-      </script>
+    function transferirDados() {
+        var nameText = document.getElementById("nameText").innerText;
+        var emailText = document.getElementById("emailText").innerText;
+        var phoneText = document.getElementById("phoneText").innerText;
+        var medicalText = document.getElementById("medico").textContent;
 
-    
+        var urlParams = new URLSearchParams();
+        urlParams.append("nameText", nameText);
+        urlParams.append("emailText", emailText);
+        urlParams.append("phoneText", phoneText);
+        urlParams.append("medicalselect", medicalText);
+
+        // Redirecionar para a próxima página com os parâmetros
+        window.location.href = "consultas.html?" + urlParams.toString();
+    }
+    </script>
 </body>
 </html>
