@@ -25,11 +25,16 @@
         <button id="cancel">Cancelar</button>
         <p id="txt1">Em caso de falta ou atraso de 15 minutos, será cobrado uma multa de 10% do valor da consulta(mais os 15% que foi pago no ato do agendamento)</p>
     </div> <br>
-    <button id="btnagenda">Agende a sua próxima consulta aqui</button>
+    <button id="btnagenda" onclick="redirecionar()">Agende a sua próxima consulta aqui</button>
     <div >
         <img src="imagens/consulta.jpg" alt="Consulta" id="img">
     </div>
         
     </div>
 </body>
+<script>
+    function redirecionar() {
+    window.location.href ="marcarconsultap.html";
+}
+</script>
 </html>
