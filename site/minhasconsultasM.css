@@ -31,16 +31,21 @@ table {
     margin-top: 5px;
     border-collapse: collapse;
     width: 100%;
+    
+    
   }
   
   th, td {
     text-align: left;
     padding: 24px 66px;
     font-size: 20px;
+    
+    
   }
   
   tr:nth-child(even) {
     background-color:lightgray;
+    
   }
   
   th {

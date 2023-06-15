@@ -1,3 +1,6 @@
+body{
+  background-color: #f5f5f5;
+}
 #divenorme{
     position: fixed;
     width: 100%;
@@ -13,20 +16,16 @@
     height: 30px;
     margin: 15px;
     font-size: 15px;
+    background-color: #023E7D;
+    color: #f5f5f5;
+    transition: 0.5s;
+    border-style: none;
   }
-  
-#butao::before {
-    content: "";
-    position: absolute;
-    left: 5%;
-    top: 30%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    transform: rotate(-45deg);
-  }
+#butao:hover{
+  background-color:#f5f5f5;
+  color: black;
+
+}
 #titulo{
     margin-left: -10px;
     margin-top: 50px;
@@ -34,7 +33,13 @@
     text-align: center;
 }
 #txt1{
-    text
-    width: 600px;
+    width: 500px;
     text-align: left;
+}
+#img1{
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -250px;
+  width: 400px;
+  height: 300px;
 }

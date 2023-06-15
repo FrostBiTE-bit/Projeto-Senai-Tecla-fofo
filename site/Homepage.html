@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<title>SP MEDICAL GROUP - HOMEPAGE</title>
+<title>SP MEDICAL GROUP</title>
 <meta charset="UTF-8">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="Login.html">
   
     <div class="fundog">
-      <span class="login">
-        <a id="txt" href="login.html">Login</a>
-      </span>  
+      <button class="login" onclick="redirecionar()">Login</button>  
       <div class="quadpesq">
         <div id="divBusca" > <img class="imglupa" src="imagens/lupa.png" alt="lupa">
           <input type="text" id="txtBusca" placeholder="Faça sua busca aqui"/>
@@ -25,14 +23,14 @@
     <div class="topnav">
       <a href="#endereço">Endereço</a>
       <a href="#Planos">Planos de saúde</a>
-      <a href="">Nossos Médicos</a>
+      <a href="nossos medicos.html">Nossos Médicos</a>
       <a href="#Quemsomos">Quem somos</a>
       </div>
 </head>
   <body>
     <span>
-      <img id="img1" src="imagens/sedentarismo infantil.jpg" href="https://www.shutterstock.com/pt/search/doa%c3%a7%c3%a3o-de-sangue" onclick="redirecionar()">
-        <span class="txtimg1"  onclick="redirecionar()">Obesidade infantil. <br> Nutrição saudável, futuro em forma</span>
+      <img id="img1" src="imagens/sedentarismo infantil.jpg" href="https://www.shutterstock.com/pt/search/doa%c3%a7%c3%a3o-de-sangue" onclick="redirecionar1()">
+        <span class="txtimg1"  onclick="redirecionar1()">Obesidade infantil. <br> Nutrição saudável, futuro em forma</span>
     </span>
     <span>
       <img id="img2" src="imagens/Saúde mental.jpg">
@@ -66,8 +64,11 @@
 
   </span>
   <script>
-  function redirecionar() {
+  function redirecionar1() {
     window.location.href ="artigos/obesidade.html";
+  }
+  function redirecionar(){
+    window.location.href="login.html";
   }
   </script>
 </footer>
