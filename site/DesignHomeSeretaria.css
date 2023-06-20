@@ -2,7 +2,7 @@
 body {
     position: relative;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lexend Deca;
   }
   
   .topnav {
@@ -10,6 +10,7 @@ body {
     overflow: hidden;
     background-color: #023E7D;
     box-shadow:-1px 5px 4px gray;
+    font-family: Lexend Deca;
   }
   
   .topnav a {
@@ -23,6 +24,7 @@ body {
     text-decoration: none;
     font-size: 20px;
     transition: 0.3s;
+    font-family: Lexend Deca;
   }
   
   .topnav a:hover {
@@ -30,11 +32,13 @@ body {
     background-color: #ddd;
     color: black;
     transition: 0.3s;
+    font-family: Lexend Deca;
   }
   
   .topnav a.active {
     position: relative;
     color: white;
+    font-family: Lexend Deca;
   }
   .login{
     padding-top: 10px;
@@ -44,6 +48,7 @@ body {
     height:40px ;
     text-align: center;
     box-shadow:3px 5px 4px black;
+    font-family: Lexend Deca;
   }
   .avatar {
     margin-top: 45px;
@@ -72,7 +77,7 @@ body {
     
   }
   .quadpesq{
-    
+    font-family: Lexend Deca;
     position:absolute;
     padding: 8px 16px;
     margin-top: 70px;
@@ -90,6 +95,7 @@ body {
     width:430px;
     height:40px;
     box-shadow:4px 6px 5px black;
+    font-family: Lexend Deca;
   }
   #txtBusca{
     float:left;
@@ -100,6 +106,7 @@ body {
     border:none;
     height:32px;
     width:360px;
+    font-family: Lexend Deca;
   }
   .imglupa{
     position: absolute;
@@ -109,6 +116,7 @@ body {
     margin-top: 10px;
   }
   .sidebar {
+    font-family: Lexend Deca;
     height: 100%;
     width: 0;
     position: fixed;
@@ -123,6 +131,7 @@ body {
   }
   
   .sidebar a {
+    font-family: Lexend Deca;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -161,7 +170,7 @@ body {
     background-color: #bbb;
   }
   #img1{
-    
+    font-family: Lexend Deca;
     border-radius: 8px;
     position: relative;
     transition: transform .2s;
@@ -176,6 +185,7 @@ body {
   }
   
   .txtimg1{
+    font-family: Lexend Deca;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
@@ -202,6 +212,7 @@ body {
     transform: scale(1.01);
   }
   .txtimg2{
+    font-family: Lexend Deca;
     position: absolute;
     text-align: center;
     background-color: transparent;
@@ -231,6 +242,7 @@ body {
   }
   
   .txtimg3{
+    font-family: Lexend Deca;
     position: absolute;
     margin-left: -377px;
     transition: transform .2s;
@@ -261,6 +273,7 @@ body {
     transform: scale(1.03);
   }
   .txtimg4{
+    font-family: Lexend Deca;
     position: absolute;
     margin-left: -377px;
     margin-top: -158px;
@@ -289,6 +302,7 @@ body {
     margin-left: 10px;
   }
     .box{
+      font-family: Lexend Deca;
       width: 55px;
       height: 48px;
       position: relative;

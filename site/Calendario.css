@@ -27,6 +27,7 @@ body {
     margin-top: 50px;
     justify-content: center;
     background-color:#f5f5f5;
+    font-family: Lexend Deca;
 }
 button {
     width: 75px;
@@ -37,6 +38,7 @@ button {
     padding: 5px;
     border-radius: 5px;
     color: white;
+    font-family: Lexend Deca;
 }
 .btnvoltar{
     position: absolute;
@@ -47,6 +49,7 @@ button {
     margin-left: -1330px;
     font-size: 20px;
     transition: 0.5s;
+    font-family: Lexend Deca;
 }
 .btnvoltar:hover{
     background-color: lightgray;
@@ -67,27 +70,33 @@ button {
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
+    font-family: Lexend Deca;
 }
 #header button {
     background-color:var(--header-button);
+    font-family: Lexend Deca;
 }
 #container {
     width: 770px;
+    font-family: Lexend Deca;
 }
 #weekdays {
     width: 100%;
     display: flex;
     color: var(--color-weekdays) ;
+    font-family: Lexend Deca;
 }
 #weekdays div {
     width: 100px;
     padding: 10px;
+    font-family: Lexend Deca;
 }
 #calendar {
     width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    font-family: Lexend Deca;
 }
 .day {
     width: 100px;
@@ -102,6 +111,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15%;
+    font-family: Lexend Deca;
 }
 .day:hover {
     background-color: var(--hover);
@@ -118,6 +128,7 @@ button {
     border-radius: 5px;
     max-height: 55px;
     overflow: hidden;
+    font-family: Lexend Deca;
 }
 .padding {
     cursor: default !important;
@@ -172,6 +183,7 @@ button {
 
 body{
     overflow: hidden;
+    font-family: Lexend Deca;
 }
 
 

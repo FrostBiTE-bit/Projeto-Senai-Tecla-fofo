@@ -1,5 +1,6 @@
 body{
     background-color: #f5f5f5;
+    font-family: Lexend Deca;
 }
 #voltar{
     width: 100px;
@@ -10,6 +11,7 @@ body{
     color: #f5f5f5;
     font-size: 20px;
     transition: transform .2s;
+    font-family: Lexend Deca;
 }
 #voltar:hover{
     transform: scale(1.03);
@@ -26,12 +28,13 @@ body{
     padding-top: 5px;
     color: #f5f5f5;
     text-align: center;
+    font-family: Lexend Deca;
 }
 table {
     margin-top: 5px;
     border-collapse: collapse;
     width: 100%;
-    
+    font-family: Lexend Deca;
     
   }
   
@@ -39,18 +42,19 @@ table {
     text-align: left;
     padding: 24px 66px;
     font-size: 20px;
-    
+    font-family: Lexend Deca;
     
   }
   
   tr:nth-child(even) {
     background-color:lightgray;
-    
+    font-family: Lexend Deca;
   }
   
   th {
     background-color:#001233;
     color: white;
+    font-family: Lexend Deca;
   }
 .table-wrapper {
     height: 580px;
@@ -66,6 +70,7 @@ input[type="checkbox"] {
     background-color: #ccc;
     border-radius: 4px;
     cursor: pointer;
+    font-family: Lexend Deca;
 }
 input[type="checkbox"]:checked {
     background-color: #001233;
@@ -77,6 +82,7 @@ input[type="checkbox"]:checked {
     width: 214px;
     height: 50px;
     transition: 0.3s;
+    font-family: Lexend Deca;
 }
 #cancel:hover{
     transform: scale(1.03);
@@ -93,6 +99,7 @@ input[type="checkbox"]:checked {
     width: 1018px;
     height: 552px;
     text-align: center;
+    font-family: Lexend Deca;
   }
 #removeButton{
     color:white;
@@ -101,6 +108,7 @@ input[type="checkbox"]:checked {
     width: 170px;
     height: 50px;
     transition: 0.5s;
+    font-family: Lexend Deca;
 }
 #removeButton:hover{
     transform: scale(1.03);
