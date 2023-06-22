@@ -39,7 +39,6 @@ table {
     border-collapse: collapse;
     width: 100%;
     font-family: Lexend Deca;
-    font-weight: 20;
   }
   
   th, td {
@@ -47,9 +46,11 @@ table {
     padding: 24px 66px;
     font-size: 20px;
     font-family: Lexend Deca;
-    font-weight: 20;
+    font-weight: 60;
   }
-  
+  td{
+    font-weight: 60;
+  }
   tr:nth-child(even) {
     background-color:lightgray;
     font-family: Lexend Deca;
